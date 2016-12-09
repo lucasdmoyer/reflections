@@ -1,0 +1,37 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+It showed me the line of that the difference occured
+
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+If I make a mistake, I could look back at previous versions to compare my mistake with older code that worked.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+You can pick more logical places to save versions wen you manually commit
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+These version control systems are more for development where each file interacts with another file so it is beneficial to bunch save. Others like google docs are meant for working with one file by itself.
+
+How can you use the commands git log and git diff to view the history of files?
+Navigate using cd to the directory of your repository. Turn on git log by typing git log. This displays all the commits. Then use the git diff [first id] [second id] to see the changes. To add color to your output, run git config -global color.ui auto
+
+How might using version control make you more confident to make changes that could break something?
+Using version control allows you to go back to when you code was working. From lookiung at the git log you can you tje got checkout [version id] to go back to that previous version.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+Making a git profile
+
+Repositories
+stores meta data files that start with .   You can view hidden . files with ls -a command
+
+To create a git repository, from an existing folder
+run git init
+now if you run ls -a you can see that the .git repository has been created
+
+There are 0 commits in a new repository.
+To see how many commits there are, you could use the git log command
+
+Run git status command to see if you are in a reposity, and what the previous commit was
