@@ -7,6 +7,7 @@ Staging area is where you prepare your commits. You need to make logical commits
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+you can run git diff to see changes in the staging area and other commmits.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
@@ -26,3 +27,21 @@ git add FILE NAME
 to add to staging area or Changes to be commited.
 
 then use git commit to commit your changes and it opens the editor to write a message
+
+running git diff --staged command allows you to see the differences between the staging area and the repository which is helpful to see what your're doing
+
+git reset --hard
+resets changes in working directory and staging area. CAREFUL!!
+
+git diff compares working directory and staging area
+git diff --staged compares staging area and most recent commit
+git diff commit1 commit2 compares 1 and 2
+
+branches
+combining them is mergin
+for having multiple paths of your project (spanish, bug fix)
+anytime you change something, you automatically get in the master branch
+
+In a directory run git branch to see all branches
+Run git branch NAMEOFBRANCH to make a new branch
+Run git checkout NAMEOFBRANCH to switch to that branch
